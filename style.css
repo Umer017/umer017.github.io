@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 25px;
+    width: 100%;
+    background: #2c7d80;
+}
+.logo{
+    font-size: 25px;
+    font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode';
+    cursor:pointer;
+    transition: 0.4s ease-in-out;
+    color: white;
+}
+.logo:hover{
+    letter-spacing: 2px;
+    transform: translateY(3px);
+}
+.sr input{
+    padding: 7px;
+    border-radius: 11px 0px 0px 0px;
+    border:none   
+}
+.bt{
+    background: rgb(216 203 47);
+    border: none;
+    color: white;
+    border-radius: 0px 0px 11px 0px;
+    padding: 7px;
+    cursor: pointer;
+    margin: 0px -3px;
+    transition: 0.3s ease-in-out;
+    font-weight: 700;
+}
+.bt:hover{
+    background: rgb(228, 241, 38);
+    color: white;
+}
+.cc{
+    position: sticky;
+    top: 0;
+    background: rgb(26, 25, 25);
+    box-shadow: 0px 9px 17px rgb(63 61 61);
+}
+.cc ul{
+    display: flex;
+    list-style: none;
+}
+.link{
+    right: 29px;
+    top: 24%;
+    position: absolute;
+    font-size: 24px;
+}
+.link .fa:hover{
+    transition: 0.3s ease-in-out;
+    color: rgb(244 213 58)
+}
+.cc ul li, a{
+    padding: 17px 25px;
+    padding-right: 40px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px ;
+    transition: 0.3s ease-in-out;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode';
+}
+.cc ul li a:hover{
+    color: rgb(244 213 58);
+}
+.imagecont, .imgheading{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 37px;
+    justify-content: center;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode';
+    background: #f1f2f6;
+    padding-bottom: 35px;
+    border: 8px solid #d0d0d0;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+}
+.imagecont{
+    box-shadow: 5px 5px 34px;
+}
+.imgheading{
+    border: 1px solid rgb(110, 108, 108);
+    border-left: none;
+    border-right: none;
+    padding: 15px ;
+}
+.imagecont .photos{
+    margin: 25px;
+    height: 320px;
+    width: 326px;
+    border-radius: 10px;
+    box-shadow: 11px 10px 20px;
+    cursor: pointer;
+}
+.imagecont .photos img{
+    height: 100%;
+    width: 100%;
+}
+.aboutsection{
+    height: 400px;
+    color: white;
+    background: rgba(0, 0, 0, 0.6) url('images/bg.jpg');
+    background-blend-mode: darken;
+    width: 100%;
+    background-size: cover;
+    margin-top: 36px;
+    box-shadow: 5px 5px 34px;
+}
+.abt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid white;
+    padding: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode';
+    font-size: 35px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 15px auto;
+    flex-direction: row-reverse;
+}
+.profile{
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+}
+.profile img{
+    border-radius: 10px;
+    border: 4px solid gray;
+    box-shadow: 5px 5px 15px seashell;
+    width: 200px;
+    height: 250px;
+    margin-top: -20px;
+}
+.small-text{
+    font-size: 16px;
+    width: 75%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+}
+.small-text a{
+    color: white;
+    font-size: 27px;
+    padding: 8px;
+}
+.small-text .fa:hover{
+    color: rgb(255, 156, 25);
+    transform: translateY(5px);
+    transition: 0.4s ease-in-out;
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 20px;
+    padding: 30px 0;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3) url('images/cnbg.jpg');
+    background-blend-mode: darken;
+    box-shadow: 5px 5px 34px;
+}
+#contact h1{
+    margin-bottom: 17px;
+    color: #fff;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode';
+}
+#contact input,textarea{
+    margin: 8px;
+    width: 40%;
+    border: 2px solid black;
+    text-align: center;
+    padding: 7px;
+    border-radius: 10px;
+}
+.btn{
+    padding: 9px;
+    margin-top: -3px;
+    cursor: pointer;
+    background: rgb(184, 12, 12);
+    color: white;
+    border-radius: 15px;
+    border: none;
+    transition: 0.3s ease-in-out;
+    letter-spacing: 1px;
+}
+.btn:hover{
+    background: red;
+    padding: 10px;
+    width: 11%;
+    letter-spacing: 2px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 15px;
+    background: rgb(41, 41, 41);
+    color: white;
+}
+@media screen and (max-width: 1207px){
+    .main{
+        width: 100%;
+        margin: 4px;
+    }
+    .small-text{
+        font-size: 13px;
+    }
+    .profile{
+    width: 179px;
+    height: 195px;
+    margin: 20px;
+}
+.profile img{
+    width: 176px;
+    height: 219px;
+}
+}
+@media screen and (max-width: 694px){
+    .cc ul li, a{
+        padding: 17px 10px;
+        padding-right: 0px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 752px){
+    .imagecont .photos{
+        width: 250px;
+        height: 250px;
+    }
+    
+}
+
+@media screen and (max-width: 445px){
+    .sr{
+        position: absolute;
+        right: 11px;
+        top: 14px;
+    }
+    .sr input{
+        width: 67px;
+        font-size: 11px;
+        padding: 4px;
+}
+    .sr .bt{
+        width: 39px;
+        padding: 5px;
+        font-size: 9px;
+    }
+    .aboutsection{
+        height: 460px;
+
+    }
+}
+@media screen and (max-width: 514px){
+
+    .profile {
+            width: 112px;
+            height: 129px;
+            margin: 3px;
+        }
+    .profile img{
+        margin-top: auto;
+        width: 98%;
+        height: 98%;
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items:flex-start; 
+    
+    }
+    #contact input,textarea{
+        width: 62%;
+}
+.small-text, .fa{
+    font-size: 12px;
+}
+
+}
+
+  
